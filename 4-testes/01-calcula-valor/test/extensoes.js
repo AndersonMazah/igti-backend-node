@@ -2,7 +2,7 @@ const calculaValor = require('../src/calcula-valor')
 
 expect.extend({
 
-  tenhaSomaDeValoresIgual(items, soma) {
+  tenhaSomaDeValoresIgual (items, soma) {
     const somaReal = calculaValor.arredondar(items.reduce((a, t) => a + t))
     const passou = somaReal === calculaValor.arredondar(soma)
 
@@ -12,7 +12,7 @@ expect.extend({
     }
   },
 
-  sejaDecrescente(itens) {
+  sejaDecrescente (itens) {
     for (let i = 0; i < itens.length - 1; i += 1) {
       const j = i + 1
       if (itens[i] < itens[j]) {

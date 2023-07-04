@@ -1,5 +1,5 @@
 {
-  "name": "teste-com-jest-mock",
+  "name": "02-mock-spy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
