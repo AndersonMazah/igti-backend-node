@@ -5,7 +5,7 @@ async function connect() {
         return global.connection.connect();
     }
     const pool = new pg.Pool({
-        connectionString: "postgresql://postgres:senha5432@localhost:5432/petshop"
+        connectionString: "postgresql://postgres:senha5432@172.17.0.2:5432/petshop"
     });
     global.connection = pool;
 
